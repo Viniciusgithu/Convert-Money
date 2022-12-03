@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+  <title>Convert Money</title>
+</head>
+<body>
+  
+  <section class="container">
+    <header>
+      <h1>CodeClub Convert Money</h1>
+    </header>
+
+    <main class="container-convert">
+      <label class="box-rs"> Converter <span>de</span>
+        <select>
+          <option>
+            R$ Real Brasileiro
+          </option>
+        </select>
+      </label> 
+
+      <label class="box-rs"> Converter <span>para</span>
+        <select id="currency-select">
+          <option>
+            US$ Dólar Americano
+          </option>
+          <option>
+            € Euro
+          </option>
+        </select>
+      </label> 
+
+      <label class="box-rs"><span>Valor</span>
+        <input type="number" placeholder="R$ 10.000">
+      </label>  
+
+      <button type="button" id="btn-to-convert">Converter</button>
+
+      <div class="box-slogans">
+        <section class="b-brazil">
+          <img src="./imgs/brasil 2.svg" alt="bandeira-do-brasil">
+          <p class="p-changed">Real:</p>
+          <p class="changed-value" id="changed-value-rs">R$ 0,00</p>
+        </section>
+
+        <picture class="arrow-img">
+          <img src="./imgs/Vector.png" alt="seta-para-baixo">
+        </picture>
+
+        <section class="b-eua">
+          <img src="./imgs/estados-unidos (1) 1.svg" alt="bandeira-dos-estados-unidos" id="currency-img">
+          <p class="p-changed" id="currency-name">Dólar Americano:</p>
+          <p class="changed-value" id="changed-value-us">UR$ 0,00</p>
+        </section>
+      </div>
+    </main>
+  </section>
+</body>
+<script src="./index.js"></script>
+</html>
