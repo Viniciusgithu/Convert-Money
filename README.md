@@ -11,4 +11,4 @@
 </p>
 <br>
 <p> 💻 Aplicação disponível em: <br>
-  <a href="https://viniciusgithu.github.io/Convert-Money">Clique aqui</a>
+  <a href="https://viniciusgithu.github.io/Convert-Money" target="_blank">Clique aqui</a>
