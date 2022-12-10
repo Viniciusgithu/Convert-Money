@@ -7,6 +7,7 @@ let select = document.querySelector('#currency-select');
 //Declarar as constantes do valor das moedas.
 const dolar = 5.40;
 const euro = 5.49;
+const bitcoin = 89.84523;
 
 //Definir a função que irá converter as moedas.
 function convertValues () {
@@ -21,8 +22,11 @@ function convertValues () {
 
   if(select.value === 'US$ Dólar Americano'){
     dolarText.innerHTML = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(inputReal / dolar);
-  } else {
+  } else if (select.value === '€ Euro') {
     dolarText.innerHTML = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'}).format(inputReal / euro);
+  } else {
+    let valorConvertido = inputReal / bitcoin;
+    dolarText.innerHTML = parseFloat(valorConvertido).toFixed(5);
   }
  
 }
@@ -35,9 +39,12 @@ changeCurrency = () => {
   if(select.value === '€ Euro'){
     currencyName.innerHTML = 'Euro:';
     currencyImg.src = './imgs/euro.svg'
-  } else {
+  } else if (select.value === 'US$ Dólar Americano'){
     currencyName.innerHTML = 'Dólar Americano:';
     currencyImg.src = './imgs/estados-unidos (1) 1.svg'
+  } else {
+    currencyName.innerHTML = 'Bitcoin: ';
+    currencyImg.src = './imgs/bitcoins.svg'
   }
   convertValues()
 }
