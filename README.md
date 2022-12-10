@@ -7,7 +7,7 @@
 </p>
 <br>
 <p> 🔍 Objetivo:  <br>
-  Desenvolver um convertor de moedas (💵 Dólar Americano e Euro 💶) usando as tecnologias estudadas no curso. Assim, aprofundamos os conhecimentos adquiridos. 
+  Desenvolver um conversor de moedas (💵 Dólar Americano e Euro 💶) usando as tecnologias estudadas no curso. Assim, aprofundamos os conhecimentos adquiridos. 
 </p>
 <br>
 <p> 💻 Aplicação disponível em: <br>
