@@ -15,8 +15,6 @@ const convertValues = async () => {
   const bitcoin = data.BTCBRL.high
 
 
-  console.log(data)
-
   realText.innerHTML = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(inputReal);
 
   if (select.value === 'US$ Dólar Americano') {
